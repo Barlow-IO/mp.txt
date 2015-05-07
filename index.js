@@ -1,3 +1,5 @@
+"use strict";
+
 ////////////////////////
 //SETUP EXPRESS SERVER//
 ////////////////////////
@@ -21,13 +23,11 @@ app.use(express.static(__dirname + '/public'));
 //   //req means "request" and res mean "result"
 // });
 
-
 /////////////
 //CHAT ROOM//
 /////////////
 var usernames = {};
 var numUsers = 0;
-
 
 //////////////////
 //EVENT HANDLING//
@@ -38,8 +38,6 @@ io.on('connection', function (socket) {
   socket.broadcast.emit('hey', {
     data: 'hello socket'
   });
-
-  socket.emit('chat message', 'testing chat message functionality');
 
   //bind to events
   socket.on('disconnect', function(){ //disconnect event

@@ -3,9 +3,11 @@ Literally a text based adventure
 
 # Prerequisites
 
- 1. [**`node.js`**](https://nodejs.org/download/)
+ 1. [**nvm**](https://github.com/creationix/nvm) [(nvmw for windows)](https://github.com/hakobera/nvmw)
 
- 2. **`npm`** - node package manager (this was also installed in the previous package)
+ 2. **node.js:** `nvm install node`
+
+ 3. **io.js:** `nvm install iojs`
 
 #How to use
 
