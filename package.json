@@ -1,0 +1,29 @@
+{
+  "name": "mp.txt",
+  "version": "0.0.1",
+  "description": "literal text based adventure",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barlow-IO/mp.txt.git"
+  },
+  "keywords": [
+    "text",
+    "adventure"
+  ],
+  "author": "Barlow-IO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Barlow-IO/mp.txt/issues"
+  },
+  "homepage": "https://github.com/Barlow-IO/mp.txt#readme",
+  "devDependencies": {
+    "express": "^4.12.3",
+    "grunt": "^0.4.5",
+    "grunt-watchify": "^0.1.0",
+    "socket.io": "^1.3.5"
+  }
+}
