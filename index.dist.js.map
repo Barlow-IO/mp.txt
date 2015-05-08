@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":[],"mappings":"AAAA,YAAY,CAAC;AACb,OAAO,CAAC,gBAAgB,CAAC,CAAC;AAC1B,OAAO,CAAC,wBAAwB,CAAC,EAAE,CAAC","file":"index.js","sourcesContent":["\"use strict\";\nrequire(\"babel/register\");\nrequire(\"./app/server/server.js\")();\n"]}
