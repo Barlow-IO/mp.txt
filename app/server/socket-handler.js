@@ -1,4 +1,4 @@
-module.exports = function(socket) {
+module.exports = (socket) => {
   console.log('a user connected');
   //emit events
   socket.broadcast.emit('hey', {
@@ -15,7 +15,7 @@ module.exports = function(socket) {
     socket.emit('chat message', msg);
   });
 
-  socket.on('keypress',  function(event) {
+  socket.on('keypress',  (event) => {
     // body...
   });
 };
