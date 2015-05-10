@@ -4,10 +4,11 @@ socket.on('hey', function(data) {
   console.log(data.data);
 });
 
-$('form').submit(function(e){
+//BIND TO EVENTS//
+$('#chat-form').submit(function(e){
   e.preventDefault();
-  socket.emit('chat message', $('#m').val());
-  $('#m').val('');
+  socket.emit('chat message', $('#chat-input').val());
+  $('#chat-input').val('');
 });
 
 $(window).keypress(function(e) {
@@ -24,5 +25,5 @@ $(window).keypress(function(e) {
 });
 
 socket.on('chat message', function(msg){
-  $('#messages').append($('<li>').text(msg));
+  $('#chat-messages').append($('<li>').text(msg));
 });

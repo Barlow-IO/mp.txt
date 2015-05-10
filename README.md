@@ -20,7 +20,7 @@ Literally a text based adventure
 
  4. run `npm install`
 
- 5. run `nodemon .`
+ 5. run `grunt` to start the server
 
  6. open a browser and go to `localhost:3001`
 
