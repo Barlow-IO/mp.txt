@@ -9,6 +9,7 @@ $('#chat-form').submit(function(e){
   e.preventDefault();
   socket.emit('chat message', $('#chat-input').val());
   $('#chat-input').val('');
+  $('#chat-messages').animate({ scrollTop: $('#chat-messages')[0].scrollHeight}, 100);
 });
 
 $(window).keypress(function(e) {

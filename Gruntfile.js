@@ -20,7 +20,8 @@ module.exports = function(grunt) {
       options: {
         ignore: [
           '*.test.js',
-          'node_modules/**'
+          'node_modules/**',
+          'public/**'
         ],
       },
       exec: {
@@ -46,7 +47,7 @@ module.exports = function(grunt) {
     },
     watch: {
       stylus: {
-        files: ['**/*.styl'],
+        files: ['**/*.styl', '!**/node_modules/**'],
         tasks: ['stylus'],
         options: {
           livereload: true,
@@ -54,7 +55,6 @@ module.exports = function(grunt) {
       }
     },
   });
-  
+
   grunt.registerTask('default', ['concurrent']);
-  // grunt.registerTask('stylus', ['stylus:compile']);
 };
