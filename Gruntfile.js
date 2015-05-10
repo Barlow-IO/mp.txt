@@ -4,6 +4,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-concurrent');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-stylus');
+  grunt.loadNpmTasks('grunt-node-inspector');
 
   grunt.initConfig({
     concurrent: {
@@ -23,39 +24,37 @@ module.exports = function(grunt) {
         ],
       },
       exec: {
-        'js': 'iojs'
+        'styl': 'stylus'
+      }
+    },
+    'node-inspector': {
+      dev: {
+        options: {
+          'web-port': 3002,
+          'web-host': 'localhost',
+          'debug-port': 3001,
+          'save-live-edit': true,
+        }
       }
     },
     stylus: {
       compile: {
-        options: {
-
-        },
         files: {
-          expand: true,
-          src: 'public/css/**.*.styl',
-          dest: 'public/css/',
-          ext: '.css'
+          'public/css/style.css': 'public/css/style.styl',
         }
       }
     },
     watch: {
-      options: {
-        livereload: true
-      },
       stylus: {
         files: ['**/*.styl'],
         tasks: ['stylus'],
         options: {
           livereload: true,
-        },
-      },
+        }
+      }
     },
   });
-  grunt.event.on('watch', function(action, filepath, target) {
-    grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
-  });
+  
   grunt.registerTask('default', ['concurrent']);
-  grunt.registerTask('stylus', ['stylus']);
-  grunt.registerTask('watch', ['watch:stylus']);
+  // grunt.registerTask('stylus', ['stylus:compile']);
 };
