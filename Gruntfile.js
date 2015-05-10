@@ -21,7 +21,8 @@ module.exports = function(grunt) {
         ignore: [
           '*.test.js',
           'node_modules/**',
-          'public/**'
+          'public/**',
+          '.git/**'
         ],
       },
       exec: {
