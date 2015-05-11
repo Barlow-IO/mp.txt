@@ -25,4 +25,8 @@ Literally a text based adventure
  6. open a browser and go to `localhost:3001`
 
 Any time you save changes to code, `nodemon` will update the server.
-Just refresh, and you're good to go.
+Just refresh the web page, and you're good to go.
+
+#Trouble Shooting
+
+ 1. `-bash: node: command not found` nvm means "node version manager" and it's using `iojs` somehow. run `nvm use node` and you're good to go

@@ -38,6 +38,8 @@ body
 .right-container
   -webkit-flex 1
   flex 1
+  display -webkit-flex
+  display flex
 
 .view-container
   width 100%
@@ -103,8 +105,9 @@ body
 
 .status-text::after
   content ']'
-//IDEA: we can do health bars entirely in css by
-//      manipulating min and max health value attributes
+//TODO: (idea) do health bars entirely in css
+//      by manipulating min and max health values
+//      attributes on the tags
 
 .status-health
   color #de472f
@@ -117,3 +120,5 @@ body
 
 .status-food
   color #82691e
+
+// .version-number
