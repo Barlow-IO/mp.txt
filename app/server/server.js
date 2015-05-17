@@ -4,11 +4,11 @@ module.exports = () => {
   const port = process.env.PORT || 3001;
 
   //SETUP EXPRESS SERVER//
-  let express = require('express');
-  let app = express();
-  let server = require('http').createServer(app);
-  let io = require('socket.io')(server);
-  let SocketHandler = require('./socket-handler');
+  var express = require('express');
+  var app = express();
+  var server = require('http').createServer(app);
+  var io = require('socket.io')(server);
+  var SocketHandler = require('./socket-handler');
 
   //listen to the 'port'
   server.listen(port, () => {
