@@ -1,22 +1,19 @@
 {
-  "posts": [
+  "tiles": [
     {
-      "title": "lowdb is awesome"
+      "char": "#"
     },
     {
-      "title": "lowdb is awesome"
+      "char": "#"
     },
     {
-      "title": "lowdb is awesome"
+      "char": "#"
     },
     {
-      "title": "lowdb is awesome"
+      "char": "#"
     },
     {
-      "title": "lowdb is awesome"
-    },
-    {
-      "title": "lowdb is awesome"
+      "char": "#"
     }
   ]
 }
