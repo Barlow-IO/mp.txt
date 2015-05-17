@@ -9,6 +9,7 @@ module.exports = () => {
   var server = require('http').createServer(app);
   var io = require('socket.io')(server);
   var SocketHandler = require('./socket-handler');
+  var db = require('./db');
 
   //listen to the 'port'
   server.listen(port, () => {
@@ -27,5 +28,4 @@ module.exports = () => {
     console.log('connection made... creating a Socket Handler');
     new SocketHandler(socket);
   });
-
 };
