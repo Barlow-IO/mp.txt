@@ -30,3 +30,13 @@ Just refresh the web page, and you're good to go.
 #Trouble Shooting
 
  1. `-bash: node: command not found` nvm means "node version manager" and it's using `iojs` somehow. run `nvm use node` and you're good to go
+
+#Naming Conventions
+
+ 1. Globals should be `IN_ALL_CAPS`
+
+ 2. Files should be `lower-case-with-dashes.extension`
+
+ 3. Instance variables should be `camelCased`
+
+ 4. Classes should be `Capitalized`
