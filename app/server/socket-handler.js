@@ -18,4 +18,8 @@ module.exports = (socket) => {
   socket.on('keypress',  (event) => {
     // body...
   });
+
+  socket.on('world tick', () => {
+
+  });
 };

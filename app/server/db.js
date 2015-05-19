@@ -1,8 +1,11 @@
 var low = require('lowdb');
-var Tile = require('../models/tile');
+var World = require('../models/world');
 
-var db = low('db.json');
+var db = low();
+delete db.worlds;
+db('worlds').push({id: 1, world: new World()});
+db('worlds').push({id: 2, world: new World()});
+db('worlds').push({id: 3, world: new World()});
 
-db('tiles').push(new Tile('#'));
 db.save('db.json');
 module.exports = db;

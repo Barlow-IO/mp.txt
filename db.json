@@ -1,19 +1,145 @@
 {
-  "tiles": [
+  "worlds": [
     {
-      "char": "#"
+      "id": 1,
+      "world": {
+        "regions": [
+          [
+            [
+              {
+                "width": 2,
+                "height": 2,
+                "layers": {
+                  "below": {
+                    "width": 2,
+                    "height": 2,
+                    "content": [
+                      [
+                        {
+                          "char": "░",
+                          "solid": false,
+                          "color": "#FFFFFF"
+                        },
+                        {
+                          "char": "░",
+                          "solid": false,
+                          "color": "#FFFFFF"
+                        }
+                      ],
+                      [
+                        {
+                          "char": "░",
+                          "solid": false,
+                          "color": "#FFFFFF"
+                        },
+                        {
+                          "char": "░",
+                          "solid": false,
+                          "color": "#FFFFFF"
+                        }
+                      ]
+                    ]
+                  }
+                }
+              }
+            ]
+          ]
+        ]
+      }
     },
     {
-      "char": "#"
+      "id": 2,
+      "world": {
+        "regions": [
+          [
+            [
+              {
+                "width": 2,
+                "height": 2,
+                "layers": {
+                  "below": {
+                    "width": 2,
+                    "height": 2,
+                    "content": [
+                      [
+                        {
+                          "char": "░",
+                          "solid": false,
+                          "color": "#FFFFFF"
+                        },
+                        {
+                          "char": "░",
+                          "solid": false,
+                          "color": "#FFFFFF"
+                        }
+                      ],
+                      [
+                        {
+                          "char": "░",
+                          "solid": false,
+                          "color": "#FFFFFF"
+                        },
+                        {
+                          "char": "░",
+                          "solid": false,
+                          "color": "#FFFFFF"
+                        }
+                      ]
+                    ]
+                  }
+                }
+              }
+            ]
+          ]
+        ]
+      }
     },
     {
-      "char": "#"
-    },
-    {
-      "char": "#"
-    },
-    {
-      "char": "#"
+      "id": 3,
+      "world": {
+        "regions": [
+          [
+            [
+              {
+                "width": 2,
+                "height": 2,
+                "layers": {
+                  "below": {
+                    "width": 2,
+                    "height": 2,
+                    "content": [
+                      [
+                        {
+                          "char": "░",
+                          "solid": false,
+                          "color": "#FFFFFF"
+                        },
+                        {
+                          "char": "░",
+                          "solid": false,
+                          "color": "#FFFFFF"
+                        }
+                      ],
+                      [
+                        {
+                          "char": "░",
+                          "solid": false,
+                          "color": "#FFFFFF"
+                        },
+                        {
+                          "char": "░",
+                          "solid": false,
+                          "color": "#FFFFFF"
+                        }
+                      ]
+                    ]
+                  }
+                }
+              }
+            ]
+          ]
+        ]
+      }
     }
   ]
 }

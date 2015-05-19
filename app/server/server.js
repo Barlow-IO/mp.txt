@@ -11,17 +11,19 @@ module.exports = () => {
   var SocketHandler = require('./socket-handler');
   var db = require('./db');
 
-  //listen to the 'port'
+  //listen to the port
   server.listen(port, () => {
     console.log('Server listening at port %d', port);
   });
 
   //ROUTING//
   app.use(express.static(__dirname + '/../../public'));
-  // Use app.get if you're going to route to a page that can't be served statically
-  // app.get('/', function(req, res){
-  //   // req means "request" and res mean "result"
-  // });
+  app.get('/api/*', function(request, result){
+    var id = request.url.split('/')[2];
+    console.log(id);
+    result.send(db('worlds').chain().where({id: id}).value());
+    console.log(request.url.split('/'));
+  });
 
   //EVENT HANDLING//
   io.on('connection', (socket) => {
