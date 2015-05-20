@@ -18,7 +18,6 @@ module.exports = () => {
 
   //ROUTING//
   app.use(express.static(__dirname + '/../../public'));
-  // Use app.get if you're going to route to a page that can't be served statically
   // app.get('/', function(req, res){
   //   // req means "request" and res mean "result"
   // });
